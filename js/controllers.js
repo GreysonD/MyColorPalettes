@@ -5,15 +5,15 @@ function ColorListCtrl($scope) {
   		"data": [
   			{
     			"name": "dark",
-    			"code": "#1a4278"
+    			"code": "#153c75"
   			},
   			{
     			"name": "regular",
-    			"code": "#045eaa"
+    			"code": "#1f59ae"
   			},
   			{
     			"name": "light",
-    			"code": "#2384c6"
+    			"code": "#4081cb"
   			}
   		],
   		"tags": []
@@ -23,15 +23,15 @@ function ColorListCtrl($scope) {
   		"data": [
   		  {
     			"name": "dark",
-    			"code": "#e25a20"
+    			"code": "#e3481b"
   			},
   			{
     			"name": "regular",
-    			"code": "#f57921"
+    			"code": "#f36717"
   			},
   			{
     			"name": "light",
-    			"code": "#faa21c"
+    			"code": "#f7980f"
   			}
   		],
   		"tags": []
@@ -41,19 +41,57 @@ function ColorListCtrl($scope) {
   		"data": [
   		  {
     			"name": "dark",
-    			"code": "#509634"
+    			"code": "#4b9625"
   			},
   			{
     			"name": "regular",
-    			"code": "#7eb138"
+    			"code": "#72b623"
   			},
   			{
     			"name": "light",
-    			"code": "#9ac93d"
+    			"code": "#8cd024"
   			}
   			
   		],
   		"tags": []
   	},
+  	{
+  		"title": "WOMEN",
+  		"data": [
+  		  {
+    			"name": "dark",
+    			"code": "#701038"
+  			},
+  			{
+    			"name": "regular",
+    			"code": "#9c154f"
+  			},
+  			{
+    			"name": "light",
+    			"code": "#be1565"
+  			}
+  			
+  		],
+  		"tags": []
+  	},
+  	{
+  		"title": "YOUTH",
+  		"data": [
+  		  {
+    			"name": "dark",
+    			"code": "#06837c"
+  			},
+  			{
+    			"name": "regular",
+    			"code": "#00a997"
+  			},
+  			{
+    			"name": "light",
+    			"code": "#66caa6"
+  			}
+  			
+  		],
+  		"tags": []
+  	}
   ];
 }
