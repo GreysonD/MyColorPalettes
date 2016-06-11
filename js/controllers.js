@@ -94,4 +94,18 @@ function ColorListCtrl($scope) {
   		"tags": []
   	}
   ];
+  for(var i = 0; i < $scope.colors.length; i++) {
+    for(var j = 0; j < $scope.colors[i].data.length; j++) {
+      var rgb = hexToRgb($scope.colors[i].data[j].code)
+      $scope.colors[i].data[j].rgb = "rgb( "+rgb.r+", "+rgb.g+", "+rgb.b+")";
+    }
+  }
+  function hexToRgb(hex) {
+    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return result ? {
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16)
+    } : null;
+  }
 }
