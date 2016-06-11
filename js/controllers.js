@@ -1,3 +1,8 @@
+angular.module('RNPalette',['angular-clipboard'])
+  .controller('ColorListCtrl',ColorListCtrl)
+
+ColorListCtrl.$inject = ['$scope'];
+
 function ColorListCtrl($scope) {
   $scope.colors = [
   	{
