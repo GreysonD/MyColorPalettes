@@ -1,9 +1,14 @@
 angular.module('RNPalette',['angular-clipboard'])
   .controller('ColorListCtrl',ColorListCtrl)
 
-ColorListCtrl.$inject = ['$scope'];
+ColorListCtrl.$inject = ['$scope','clipboard'];
 
-function ColorListCtrl($scope) {
+function ColorListCtrl($scope,clipboard) {
+  
+  $scope.copy = function(d) {
+    clipboard.copyText(d);
+  }
+  
   $scope.colors = [
   	{
   		"title": "BOULDER",
